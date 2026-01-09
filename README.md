@@ -2,7 +2,7 @@
 
 Espaço ciberfeminista de arte digital.
 
-## 🚀 Quick Start
+##  Quick Start
 ```bash
 npm install
 npm run dev
