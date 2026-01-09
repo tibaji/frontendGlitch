@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-pink: #ff006e;
+  --color-neon-blue: #00f5ff;
+  --color-neon-purple: #b967ff;
+  --color-neon-orange: #ff8800;
+  --color-cyber-dark: #0a0014;
+}
+
+/* Classes customizadas */
+.glitch-text {
+  text-shadow: 
+    2px 2px 0px rgba(255, 0, 110, 0.7),
+    -2px -2px 0px rgba(0, 245, 255, 0.7);
+  animation: glitch 3s infinite;
+}
+
+.neon-glow {
+  text-shadow: 
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor;
+}
+
+.bg-cyber-gradient {
+  background: linear-gradient(135deg, #0a0014 0%, #1a0033 50%, #0a0014 100%);
+}
+
+@keyframes glitch {
+  0%, 100% {
+    text-shadow: 2px 2px 0px rgba(255, 0, 110, 0.7), -2px -2px 0px rgba(0, 245, 255, 0.7);
+  }
+  25% {
+    text-shadow: -2px -2px 0px rgba(255, 0, 110, 0.7), 2px 2px 0px rgba(0, 245, 255, 0.7);
+  }
+  50% {
+    text-shadow: 2px -2px 0px rgba(255, 0, 110, 0.7), -2px 2px 0px rgba(0, 245, 255, 0.7);
+  }
+  75% {
+    text-shadow: -2px 2px 0px rgba(255, 0, 110, 0.7), 2px -2px 0px rgba(0, 245, 255, 0.7);
+  }
+}

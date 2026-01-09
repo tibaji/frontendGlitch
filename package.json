@@ -1,0 +1,34 @@
+{
+  "name": "galeria-glitch",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && surge dist galeriagglitch.surge.sh"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "clsx": "2.1.1",
+    "lucide-react": "^0.487.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "7.55.0",
+    "react-router-dom": "^7.11.0",
+    "sonner": "2.0.3",
+    "swiper": "^12.0.3",
+    "tailwind-merge": "3.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^6.4.1"
+  }
+}
